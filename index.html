@@ -8,46 +8,36 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 <body>
-    <header>   
-        
-            <img src="./assets/img/pagina principal/logo.jpeg" alt="logo" class="logo">
-            <div class="contenedor">
-                <a href=""class="carrito"></a> 
-                <i class="fa-solid fa-cart-shopping"></i> 
-                <a href=""class="lupita"></a>
-                <i class="fa-solid fa-magnifying-glass"></i>
+    <header class="header">
+        <div class="logo">
+            <img src="./assets/img/pagina principal/logo.jpeg" alt="logo">
+        </div>    
+        <br>
+        <nav>
+            <input type="checkbox" name="" id="toggle">
+            <label for="toggle"><i class="fa-solid fa-bars"></i></label>
+            <div class="menu">
+<ul class="navbar">
+    <li><a href="#">Inicio</a></li>
+    <li><a href="./pages/hombre.html">Hombre</a></li>
+    <li><a href="./pages/mujer.html">Mujer</a></li>
+    <li><a href="./pages/accesorios.html">Accesorios</a></li>
+    <li><a href="./pages/locales.html">Locales</a></li>
+</ul>
             </div>
-        
-        
-        <section class="barra">
-        
-            <nav>
-            <ul>
-                <li><a href="#">Inicio</a></li>
-                <li><a href="./pages/hombre.html">Hombre</a></li>
-                <li><a href="./pages/mujer.html">Mujer</a></li>
-                <li><a href="./pages/accesorios.html">Accesorios</a></li>
-                <li><a href="./pages/locales.html">Locales</a></li>
-            </ul>
-        </nav>
-        </section>  
-           
-    
+            </nav>
     </header>
     <main>
-        <section>
-            <img src="./assets/img/pagina principal/damas gratis.jpeg" alt="damas gratis">
-            <img src="./assets/img/pagina principal/militar.jpeg" alt="militar">
-            <img src="./assets/img/pagina principal/palacios.jpeg" alt="palacios">
+        <h1 class="barrio">Somos de Barrio, un estilo que marca las diferencias</h1>   
+        <section class="grids">
+            <img class="img1" src="./assets/img/pagina principal/damas gratis.jpeg" alt="damas gratis">
+            <img class="img2" src="./assets/img/pagina principal/militar.jpeg" alt="militar">
+            <img class="img3" src="./assets/img/pagina principal/palacios.jpeg" alt="palacios">
             
         </section>
-        <h1 class="barrio">Somos de Barrio, un estilo que marca las diferencias</h1>   
         <hr>
         <section class="video">
-            
             <video class="ciro" src="./assets/video/WhatsApp Video 2024-04-09 at 16.37.12.mp4" controls></video>
-            
-            
         </section>
         <footer>
             <section>
@@ -57,10 +47,6 @@
             </div>
             </section>
         </footer>
-
-
-
-
-    </main>
+</main>
 </body>
 </html>

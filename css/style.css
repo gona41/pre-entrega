@@ -1,174 +1,145 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Martian+Mono:wght@100..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-
-
-
-
-
-
-
-
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
 }
-
-.barra{
-    background: darkkhaki;
+ .header{
     width: 100%;
-    height: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
-}
-
-.logo{
-    width: 250px;
-    height: 150px;
-    text-align: left;
-}
-
-header{
+    margin: 0;
+    padding: 1rem;
     background-color: black;
-    color: darkkhaki;
-    padding: 50px 70px;
-    text-decoration: none;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+ }
+.header .logo img{
+    height: 300px;
+    width: 400px;
 }
 
-.barra-navegacion nav ul li{
-    color: darkkhaki;
-}
 nav{
-    background: black;
-    border-radius: 50 px;
-    padding: 10px;
-    box-shadow: 0 25px 20px -20px color(srgb darkkhaki);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: darkgoldenrod;
+    padding: 1rem 1.5rem;
+    border-radius: 40px;
+}
+.navbar{
+    display: flex;
+    gap: 1.25rem;
+    list-style: none;
+}
+.navbar li a{
     text-decoration: none;
+    font-size: 1.25rem;
+    color: black;
+    font-weight: 800;
+    gap: 1.25rem;
+}
+nav #toggle, nav label{
+    display: none;
+}
+main{
+    background-color: black;
+    width: 100%;
+}
+footer{
+    background-color: darkgoldenrod;
+    height: 30px;
+}
+.barrio{
+    color: darkgoldenrod;
+    text-align: center;
+    font-size: 45px;
+    font-weight: 100;
+}
+.video{
+    width: 100%;
+    height: 350px;
+}
+.ciro{
+    width: 100%;
+    height: 100%;
+}
+.grids{
+    display: grid;
+    width: 100%;
+    grid-template-columns: 4;
+    grid-template-columns: 2;
+    gap: 10px;
+}
+
+.grids img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.img1{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.img2{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.img3{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.ubicaciones{
     display: flex;
     flex-direction: row;
-    }
+    gap: 125px;
 
-nav ul li{
-        display: inline;
-        flex-direction: row;
-        padding: 13px 35px;
-        margin: 10px;
-        font-size: 18px;
-        font-weight: 500;
-        color: darkkhaki;
-        cursor: pointer;
-        position: relative;
-        z-index: 2;
-        transition: color 0.3s;
-        text-decoration:none;
-    }
-
-
-nav ul li ::after{
-        content: "";
-        background: darkkhaki;
-        width: 100%;
-        height: 100%;
-        border-radius: 30px;
-        position:absolute ;
-        top: 100%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        z-index: -1;
-        opacity: 0;
-    }
-
-nav ul li:hover{
-        color: darkkhaki;
-    }
-    
-nav ul li:hover::after{
-        top: 50%;
-        opacity: 1;
-    }
-    section{
-        display: flex;
-        width: 100%;
-        height: 50%;   
-
-    }
-        
-    
-    section img{
-        width: 0px;
-        flex-grow: 1;
-        object-fit: cover;
-        opacity: .8;
-        transition: .5s ease;
-    }
-section img:hover{
-        cursor: crosshair;
-        width: 300px;
-        opacity: 1;
-        filter:contrast(120%) ;
-    }
-    .video{
-        width: 100%;
-        height: 500px;
-    }
-    .video .ciro{
-        width: 100%;
-        height: 100%;
-    }
-    .morral{
-        width: 100%;
-        height: 500px;
-    }
-    .morral .video-morral{
-        width: 100%;
-        height: 100%;
-    }
-    .contenedor{
-        display: flex;
-        justify-content: right;
-        gap: 20px;
-    }
-    .contenedor a{
-        font-size: 30px;
-        color: darkkhaki;
-    }
-    .contenedor a:hover{
-        color: white;
-        transform: scale(1.2);
-    }
-    .iconos{
-        margin: 15px 0;
-
-    }
-    .iconos i{
-        border-radius: 50%;
-        padding: 15px;
-        cursor: pointer;
-        margin: 0 10px;
-        transition: 0.3s ease;
-        box-shadow: 0 2px 5px;
-        color: darkkhaki;
-    }
-    footer{
-        background-color: black;
-    }
-    .barrio{
-        color: darkkhaki;
-        text-align: center;
-    }
-    .roma{
-        width: 100%;
-        height: 800px;
-    }
-   main{
-    background-color: black;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-   }
-ul li{
-    justify-content: center;
 }
- 
+.roma{
+    width: 100%;
+}
+.pre-iconos{
+    width: 100%;
+    height: 100%;
+}
+.iconos{
+    height: 100%;
+}
+@media(max-width: 768px){
+    nav .menu{
+        width: 100%;
+        height: 0;
+        overflow: hidden;
+    }
+    nav .navbar{
+        flex-direction: column;
+        align-items: center;
+        padding: 0.5rem 0;
+    }
+    nav label{
+        display: inline-flex;
+        color: black;
+    }
+    nav #toggle:checked ~.menu{
+        height: 100%;
+    }
+    main{
+        flex-direction: column;
+        padding: 20px;
+    }
+}
+@media(max-width: 375px){
+ .header .logo img{
+    width: 100%;
+ }   
+}
